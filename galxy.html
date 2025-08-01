@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which Galaxy Are You?</title>
+
+    <style>
+
+        body{
+            background-image: url('3.png');
+            background-size:cover;
+            background-position:center;
+            background-attachment: fixed;         /* Makes it stay fixed while scrolling (optional) */
+            margin: 10px;
+            padding: 10px;
+
+        }
+
+        nav  ul{
+            list-style: none;
+            padding: 0;
+            margin-top: 0;
+             display: flex;  
+            justify-content: center;
+            gap: 20px;
+            background-color: color-mix(in srgb-linear, blue 40%, white 30%);
+          
+                }
+
+
+        nav ul li a {
+            /* text-decoration: none;  */
+            color: white;             
+            font-weight: bold;
+            padding: 15px 15px;
+            display:inline-block;
+        }
+
+        nav ul li a:hover{
+            color: aqua;
+        }
+
+        h1 {
+            color: rgb(243, 243, 248);
+            text-align: center;
+            font-family:'Times New Roman', Times, serif;
+            margin-top: 50px;
+        }
+
+        .glow-button{
+            background: #1a1a2e;
+            color: #fff;
+            border: 2px solid #346562;
+            padding: 15px 40px;
+            font-size: 20px;
+            /* border-radius: 30px; */
+            cursor: pointer;
+            box-shadow: 0 0 10px #49918c;
+            transition: box-shadow 0.3s ease-in-out;
+            animation: glow 2s infinite alternate;
+            margin-left: 520px;
+
+        }
+
+        .glow-button:hover {
+  box-shadow: 0 0 20px #45a29e, 0 0 30px #45a29e, 0 0 40px #66fcf1;
+}
+
+            @keyframes glow {
+  from {
+    box-shadow: 0 0 5px #4e8985;
+  }
+  to {
+    box-shadow: 0 0 20px #45a29e, 0 0 30px #45a29e, 0 0 40px #568380;
+  }
+}
+   #p1{
+    text-align: center;
+    color: #fff;
+    font-size:x-large;
+
+   }
+
+
+    </style>
+
+
+
+</head>
+<body>
+<nav>
+  <ul>
+    <li><a href="galxy.html">Home</a></li>
+    <li><a href="quiz.html">Take the Quiz</a></li>
+    <li><a href="#about">About</a></li>
+    <!-- <li><a href="#galaxies">Galaxies</a></li> -->
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+
+
+
+ <h1>Which Galaxy Are You?</h1>
+  <p id="p1">Take this fun personality quiz and discover your cosmic match!</p>
+
+
+
+ <button class="glow-button" onclick="location.href='quiz.html'">Start Quiz</button>
+
+
+
+    
+    
+    
+</body>
+</html>

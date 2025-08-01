@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        nav  ul{
+            /* list-style: none; */
+            padding: 0;
+            margin-top: 0;
+            display: flex;  
+            justify-content: center;
+            gap: 20px;
+            background-color: color-mix(in srgb-linear, blue 40%, white 30%);
+          
+                }
+
+
+        nav ul li a {
+            /* text-decoration: none;  */
+            color: rgb(26, 26, 26);             
+            font-weight: bold;
+            padding: 15px 15px;
+            display:inline-block;
+        }
+
+        nav ul li a:hover{
+            color: rgb(51, 0, 255);
+        }
+
+        body{
+            background-image: url("7.png");
+        }
+
+        form{
+        max-width: 400px;
+        margin: 30px auto;
+        padding: 20px;
+        background-color: rgb(137, 180, 239);
+        border-radius: 10px;
+        background-image: url("4v.png");
+        color: aliceblue;
+        }
+
+    button {
+    margin: 30px auto;
+    display: block; 
+    text-align: center; 
+    background-color: rgb(144, 146, 227);
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgb(164, 119, 103);
+    font-size: 18px;
+    padding: 10px 10px;
+}
+
+
+
+
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+
+    
+    <nav>
+    <ul>
+      <li><a href="galxy.html">Home</a></li>
+      <li><a href="quiz.html">Take the Quiz</a></li>
+      <li><a href="#about">About</a></li>
+      <!-- <li><a href="#galaxies">Galaxies</a></li> -->
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+    <form id="contact">
+        <label>     Name: <br>
+            <input type="text" name="name" placeholder="name"></label><br>
+
+<label>Last Name: <br>
+     <input type="text" name="lastname" placeholder="lastname"></label><br>
+
+<label>Email: <br>
+    <input type="email" name="email" placeholder="email"></label><br>
+
+<label>Your Message: <br>
+  <textarea name="message" rows="4" cols="40" placeholder="message"></textarea>
+</label>
+    </form>
+
+    <button>Send</button>
+
+
+    
+</body>
+</html>
